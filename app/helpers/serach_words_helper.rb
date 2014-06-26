@@ -1,0 +1,2 @@
+module SerachWordsHelper
+end

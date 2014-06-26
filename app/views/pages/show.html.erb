@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @page.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @page.description %>
+</p>
+
+<p>
+  <b>Fb link:</b>
+  <%= @page.fb_link %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @page.website %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @page.category %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>

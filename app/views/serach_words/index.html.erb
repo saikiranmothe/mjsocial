@@ -1,0 +1,23 @@
+<h1>Listing serach_words</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @serach_words.each do |serach_word| %>
+  <tr>
+    <td><%= serach_word.name %></td>
+    <td><%= link_to 'Show', serach_word %></td>
+    <td><%= link_to 'Edit', edit_serach_word_path(serach_word) %></td>
+    <td><%= link_to 'Destroy', serach_word, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Serach word', new_serach_word_path %>
